@@ -93,7 +93,7 @@ fi
 
 git submodule init
 git submodule update
-
+sudo ls /export/data2/docker
 # sudo docker rm -f `sudo docker ps --no-trunc -a -q` || echo "ok"
 sudo docker rmi $(sudo docker images | awk '/^&lt;none&gt;/ { print $3 }') || echo "oK"
 
